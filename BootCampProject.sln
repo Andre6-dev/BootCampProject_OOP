@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootCampProject", "BootCampProject\BootCampProject.csproj", "{53A3D31E-6266-4B07-A45E-3E42EC5D8BCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week1_G5", "Week1_G5\Week1_G5.csproj", "{B5CA503B-F624-45CD-B8E0-D48D203E5F91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repaso_OOP", "Repaso_OOP\Repaso_OOP.csproj", "{24C49EE2-E946-49AF-BB51-077F2D1A212C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicPlayerApp-OOP", "MusicPlayerApp-OOP\MusicPlayerApp-OOP.csproj", "{E0570A73-EDD1-4270-96C5-91A2F09EA6DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53A3D31E-6266-4B07-A45E-3E42EC5D8BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A3D31E-6266-4B07-A45E-3E42EC5D8BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A3D31E-6266-4B07-A45E-3E42EC5D8BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A3D31E-6266-4B07-A45E-3E42EC5D8BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CA503B-F624-45CD-B8E0-D48D203E5F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CA503B-F624-45CD-B8E0-D48D203E5F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CA503B-F624-45CD-B8E0-D48D203E5F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CA503B-F624-45CD-B8E0-D48D203E5F91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C49EE2-E946-49AF-BB51-077F2D1A212C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C49EE2-E946-49AF-BB51-077F2D1A212C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C49EE2-E946-49AF-BB51-077F2D1A212C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C49EE2-E946-49AF-BB51-077F2D1A212C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0570A73-EDD1-4270-96C5-91A2F09EA6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0570A73-EDD1-4270-96C5-91A2F09EA6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0570A73-EDD1-4270-96C5-91A2F09EA6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0570A73-EDD1-4270-96C5-91A2F09EA6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
