@@ -6,7 +6,8 @@ public abstract class Animal
 {
     public abstract void animalSound(); // metodo abstracto
 
-    public void dormir()
+    // Metodos no abstractos
+    public static void dormir()
     {
         Console.WriteLine("zzzz");
     }

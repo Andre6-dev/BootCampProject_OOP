@@ -48,5 +48,7 @@ class Program
         gato.sonidoAnimal();
         int edadGato = gato.contarEdad(5);
         Console.WriteLine(edadGato);
+        
+        Animal.dormir();
     }
 }

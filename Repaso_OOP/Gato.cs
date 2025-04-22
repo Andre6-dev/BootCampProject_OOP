@@ -1,6 +1,6 @@
 namespace Repaso_OOP;
 
-public class Gato : IAnimal
+public class Gato : IAnimal, IHola
 {
     public void sonidoAnimal()
     {
@@ -18,5 +18,10 @@ public class Gato : IAnimal
     public void maullar()
     {
         Console.WriteLine(" asdasdas");
+    }
+
+    public void metodoMultiple()
+    {
+        Console.WriteLine("Hola desde la interfaz 2");
     }
 }

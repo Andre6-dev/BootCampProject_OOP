@@ -19,7 +19,7 @@ public abstract class MediaItem : IPlayable
         {
             // Basic validation
             if (string.IsNullOrWhiteSpace(title))
-                throw new ArgumentNullException(nameof(title), "Title cannot be empty.");
+                throw new ArgumentNullException(nameof(title), "Title cannot be empty."); // error
             if (duration <= TimeSpan.Zero)
                 throw new ArgumentOutOfRangeException(nameof(duration), "Duration must be positive.");
 

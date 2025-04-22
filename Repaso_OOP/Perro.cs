@@ -1,6 +1,6 @@
 namespace Repaso_OOP;
 
-public class Perro : Animal
+public class Perro : Animal, IHola, IAnimal
 {
     public string nombre { get; set; }
     // Sobreescritura o overriding del metodo abstracto
@@ -12,5 +12,25 @@ public class Perro : Animal
     public Perro(string nombrePerro)
     {
         nombre = nombrePerro;
+    }
+
+    public void metodoMultiple()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void sonidoAnimal()
+    {
+        throw new NotImplementedException();
+    }
+
+    public int contarEdad(int edad)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void maullar()
+    {
+        throw new NotImplementedException();
     }
 }
