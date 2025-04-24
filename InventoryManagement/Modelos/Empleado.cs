@@ -8,7 +8,7 @@ public class Empleado
     
     public int Id { get; private set; } 
     public string Nombres { get; set; }
-    public TipoEmpleado TipoEmpleado { get; set; }
+    public TipoEmpleado TipoEmpleado { get; set; } // Yo puedo asignar otra clase como propiedad
     public EstadoEmpleado Estado { get; set; }
     public DateTime FechaIngreso { get; set; }
     public int Edad { get; set; }

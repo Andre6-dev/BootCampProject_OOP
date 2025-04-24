@@ -4,6 +4,7 @@ namespace InventoryManagement;
 
 public class SistemaInventario // Heredar esa interfaz para sobrescribir esos metodos
 {
+    // Propiades
     private List<TipoEmpleado> _tiposEmpleados = new List<TipoEmpleado>();
     private List<Empleado> _empleados = new List<Empleado>();
     private List<Producto> _productos = new List<Producto>();
@@ -43,5 +44,13 @@ public class SistemaInventario // Heredar esa interfaz para sobrescribir esos me
     }
     
     // Agregar el resto de metodos
-    
+    public void AgregarProducto(Producto producto)
+    {
+        _productos.Add(producto);
+    }
+
+    public List<Producto> ListarProductos()
+    {
+        return _productos.ToList();
+    }
 }

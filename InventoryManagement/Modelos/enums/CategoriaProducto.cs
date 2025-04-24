@@ -7,5 +7,6 @@ public enum CategoriaProducto
     MONITORES,
     PLACAS,
     PROCESADORES,
-    TARJETAGRAFICA
+    TARJETAGRAFICA,
+    IMPRESORAS,
 }

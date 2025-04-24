@@ -1,4 +1,5 @@
-﻿using InventoryManagement.Modelos;
+﻿using InventoryManagement.Interfaces;
+using InventoryManagement.Modelos;
 
 namespace InventoryManagement;
 
@@ -35,7 +36,7 @@ class Program
                         GestionEmpleados(sistema);
                         break;
                     case 2:
-                        // GestionProductos(sistema);
+                        GestionProductos(sistema);
                         break;
                     case 3:
                         // MovimientosStock(sistema);
@@ -85,6 +86,37 @@ class Program
                     break;
                 case "4":
                     // MostrarTipoEmpleados(sistema);
+                    break;
+                case "0":
+                    regresar = true;
+                    break;
+                default:
+                    Console.WriteLine("Opcion invalida.");
+                    break;
+            }
+        }
+    }
+
+    static void GestionProductos(SistemaInventario sistema)
+    {
+        bool regresar = false;
+        IProductoServicio servicio = new ProductoServicio();
+        while (!regresar)
+        {
+            Console.WriteLine("\nGestion de Productos: ");
+            Console.WriteLine("\nSeleccione una opcion: ");
+            Console.WriteLine("1. Agregar un producto");
+            Console.WriteLine("2. Ver lista de productos");
+            
+            string opcion = Console.ReadLine();
+
+            switch (opcion)
+            {
+                case "1":
+                    servicio.AgregarProducto(sistema);
+                    break;
+                case "2":
+                    servicio.MostrarProductos(sistema);
                     break;
                 case "0":
                     regresar = true;
@@ -228,6 +260,76 @@ class Program
         sistema.AgregarEmpleado(empleado2);
         
         // Agregar Productos
+        var producto1 = new Producto
+        {
+            Sku = "LAP001",
+            Nombre = "Laptop HP 15.6\"",
+            Descripcion = "Laptop HP con procesador Intel i5, 8GB RAM, 256GB SSD",
+            Precio = 799.99m,
+            Stock = 25,
+            Activo = true,
+            Categoria = CategoriaProducto.LAPTOPS,
+            FechaCreacion = DateTime.Now,
+            FechaModificacion = DateTime.Now
+        };
+        
+        var producto2 = new Producto
+        {
+            Sku = "MON002",
+            Nombre = "Monitor Dell 24\"",
+            Descripcion = "Monitor Dell Full HD 1080p, 60Hz",
+            Precio = 199.99m,
+            Stock = 15,
+            Activo = true,
+            Categoria = CategoriaProducto.MONITORES,
+            FechaCreacion = DateTime.Now,
+            FechaModificacion = DateTime.Now
+        };
+            
+        var producto3 = new Producto
+        {
+            Sku = "IMP003",
+            Nombre = "Impresora Láser HP",
+            Descripcion = "Impresora Láser monocromática, 20 ppm",
+            Precio = 149.99m,
+            Stock = 10,
+            Activo = true,
+            Categoria = CategoriaProducto.IMPRESORAS,
+            FechaCreacion = DateTime.Now,
+            FechaModificacion = DateTime.Now
+        };
+            
+        var producto4 = new Producto
+        {
+            Sku = "MOU004",
+            Nombre = "Mouse Logitech Inalámbrico",
+            Descripcion = "Mouse óptico inalámbrico con 5 botones",
+            Precio = 24.99m,
+            Stock = 30,
+            Activo = true,
+            Categoria = CategoriaProducto.IMPRESORAS,
+            FechaCreacion = DateTime.Now,
+            FechaModificacion = DateTime.Now
+        };
+            
+        var producto5 = new Producto
+        {
+            Sku = "TEC005",
+            Nombre = "Teclado Mecánico Gaming",
+            Descripcion = "Teclado mecánico RGB con switches Blue",
+            Precio = 59.99m,
+            Stock = 8,
+            Activo = true,
+            Categoria = CategoriaProducto.IMPRESORAS,
+            FechaCreacion = DateTime.Now,
+            FechaModificacion = DateTime.Now
+        };
+        
+        sistema.AgregarProducto(producto1);
+        sistema.AgregarProducto(producto2);
+        sistema.AgregarProducto(producto3);
+        sistema.AgregarProducto(producto4);
+        sistema.AgregarProducto(producto5);
 
 
     }
