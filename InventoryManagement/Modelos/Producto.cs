@@ -1,6 +1,6 @@
 namespace InventoryManagement.Modelos;
 
-public class Producto
+public class Producto : Auditoria
 {
     private static int _nextId = 1;
     
@@ -12,8 +12,6 @@ public class Producto
     public int Stock { get; set; }
     public bool Activo { get; set; }
     public CategoriaProducto Categoria { get; set; }
-    public DateTime FechaCreacion { get; set; }
-    public DateTime FechaModificacion { get; set; }
     
     public Producto()
     {
