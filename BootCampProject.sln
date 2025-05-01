@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement", "Inve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{0084EB35-F850-4088-BCA6-3B698D3E880B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidePrinciplesPractice", "SolidePrinciplesPractice\SolidePrinciplesPractice.csproj", "{285C634D-7316-4CAF-8D4A-EFE7713ECBDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciplesPracticeTwo", "SolidPrinciplesPracticeTwo\SolidPrinciplesPracticeTwo.csproj", "{88088D48-FFF3-4C39-B4AA-DF4791A8957E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{0084EB35-F850-4088-BCA6-3B698D3E880B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0084EB35-F850-4088-BCA6-3B698D3E880B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0084EB35-F850-4088-BCA6-3B698D3E880B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285C634D-7316-4CAF-8D4A-EFE7713ECBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285C634D-7316-4CAF-8D4A-EFE7713ECBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285C634D-7316-4CAF-8D4A-EFE7713ECBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285C634D-7316-4CAF-8D4A-EFE7713ECBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88088D48-FFF3-4C39-B4AA-DF4791A8957E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88088D48-FFF3-4C39-B4AA-DF4791A8957E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88088D48-FFF3-4C39-B4AA-DF4791A8957E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88088D48-FFF3-4C39-B4AA-DF4791A8957E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
