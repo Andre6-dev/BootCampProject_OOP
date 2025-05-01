@@ -2,29 +2,36 @@
 
 class Program
 {
-
-    // Aqui se aplica el primer principio por esta razon:
+    
+    // Principio de Segregacion de Interfaces (I)
     public interface IReserva
     {
         bool CrearReserva(string clienteId, DateTime fechaInicio, DateTime fechaFin);
         bool CancelarReserva(string reservaId);
     }
 
+    // Principio de Segregacion de Interfaces (I)
     public interface IPago
     {
         bool ProcesarPago(decimal monto, string metodoPago, string referencia);
     }
 
+    // Principio de Abierto Cerrado (O)
+    // Principio de Substitucion de Liskov (L)
+    // Principio de Segregacion de Interfaces (I)
     public interface INotificacion
     {
         void EnviarConfirmacion(string destinatario, string detalles);
     }
-
+    
+    // Principio de Abierto Cerrado (O)
+    // Principio de Substitucion de Liskov (L)
     public abstract class MetodoPago
     {
         public abstract bool Procesar(decimal monto, string referencia);
     }
 
+    // Principio de Responsabilidad Unica (S)
     public class TarjetaCredito : MetodoPago
     {
         public override bool Procesar(decimal monto, string referencia)
@@ -34,6 +41,7 @@ class Program
         }
     }
     
+    // Principio de Responsabilidad Unica (S)
     public class Paypal : MetodoPago
     {
         public override bool Procesar(decimal monto, string referencia)
@@ -43,6 +51,7 @@ class Program
         }
     }
     
+    // Principio de Responsabilidad Unica (S)
     public class Transferencia : MetodoPago
     {
         public override bool Procesar(decimal monto, string referencia)
@@ -52,6 +61,7 @@ class Program
         }
     }
 
+    // Principio de Responsabilidad Unica (S)
     public class EmailNotificacion : INotificacion
     {
         public void EnviarConfirmacion(string destinatario, string detalles)
@@ -60,6 +70,7 @@ class Program
         }
     }
     
+    // Principio de Responsabilidad Unica (S)
     public class SmsNotificacion : INotificacion
     {
         public void EnviarConfirmacion(string destinatario, string detalles)
@@ -68,6 +79,7 @@ class Program
         }
     }
 
+    // Principio de Responsabilidad Unica (S)
     public class PersistenciaReserva
     {
         public void GuardarReserva(Reserva reserva)
@@ -81,7 +93,8 @@ class Program
             return new Reserva { Id = id };
         }
     }
-
+    
+    // Principio de Responsabilidad Unica (S)
     public class Reserva
     {
         public string Id { get; set; }
@@ -92,6 +105,7 @@ class Program
         public string Estado { get; set; }
     }
 
+    // Principio de Responsabilidad Unica (S)
     public class Logger
     {
         public void RegistrarEvento(string mensaje)
@@ -100,14 +114,18 @@ class Program
         }
     }
     
+    // Principio de Inversion de Dependencia es (D)
     public class SistemaReservacion : IReserva, IPago
     {
+        // propiedades
         private readonly PersistenciaReserva _persistencia;
         private readonly INotificacion _notificador;
         private readonly MetodoPago _metodoPago;
         private readonly Logger _logger;
 
+        // Constructor: Este constructor esta recibiendo dependencias como abstracciones
         public SistemaReservacion(
+            // parametros
             PersistenciaReserva persistencia,
             INotificacion notificador,
             MetodoPago metodoPago,
