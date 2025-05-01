@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidePrinciplesPractice", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciplesPracticeTwo", "SolidPrinciplesPracticeTwo\SolidPrinciplesPracticeTwo.csproj", "{88088D48-FFF3-4C39-B4AA-DF4791A8957E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoPrincipiosSolid", "RetoPrincipiosSolid\RetoPrincipiosSolid.csproj", "{C85F56BB-D93F-4036-AE6B-E7577965CCB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{88088D48-FFF3-4C39-B4AA-DF4791A8957E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88088D48-FFF3-4C39-B4AA-DF4791A8957E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88088D48-FFF3-4C39-B4AA-DF4791A8957E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C85F56BB-D93F-4036-AE6B-E7577965CCB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85F56BB-D93F-4036-AE6B-E7577965CCB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85F56BB-D93F-4036-AE6B-E7577965CCB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85F56BB-D93F-4036-AE6B-E7577965CCB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
