@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciplesPracticeTwo"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoPrincipiosSolid", "RetoPrincipiosSolid\RetoPrincipiosSolid.csproj", "{C85F56BB-D93F-4036-AE6B-E7577965CCB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservaRestaurant", "ReservaRestaurant\ReservaRestaurant.csproj", "{A92C49E9-B782-4CCB-A344-859A39BEB396}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{C85F56BB-D93F-4036-AE6B-E7577965CCB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85F56BB-D93F-4036-AE6B-E7577965CCB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85F56BB-D93F-4036-AE6B-E7577965CCB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92C49E9-B782-4CCB-A344-859A39BEB396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92C49E9-B782-4CCB-A344-859A39BEB396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92C49E9-B782-4CCB-A344-859A39BEB396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92C49E9-B782-4CCB-A344-859A39BEB396}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
