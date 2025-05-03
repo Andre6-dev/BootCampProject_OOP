@@ -22,7 +22,7 @@ public class ConsoleUI
     
     public void Run()
     {
-        Console.WriteLine("=== Restaurant Reservation System ===");
+        Console.WriteLine("=== Welcome to our DaftDelicias Reservation System ===");
             
         while (_isRunning)
         {
@@ -92,7 +92,7 @@ public class ConsoleUI
         var customer = _customerService.GetOrCreateCustomer(name, phone, email);
         
         // Get Reserveation Details
-        Console.Write("Reservation date (MM/DD/YYYY): ");
+        Console.Write("Reservation date (MM/DD/YYYY HH:MM): ");
         if (!DateTime.TryParse(Console.ReadLine(), out DateTime date))
         {
             Console.WriteLine("Invalid date format.");
