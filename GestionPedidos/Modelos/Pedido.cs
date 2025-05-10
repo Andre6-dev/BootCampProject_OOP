@@ -4,7 +4,7 @@ public class Pedido
 {
     private static int _nextId = 1;
     public int Id { get; set; }
-    public string ClienteId { get; set; }
+    public int ClienteId { get; set; }
     public string NombreCliente { get; set; }
     public DateTime Fecha { get; set; }
     public List<ProductoPedido> Productos { get; set; }
