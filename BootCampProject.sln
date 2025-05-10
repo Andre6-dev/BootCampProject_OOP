@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservaRestaurant", "Reserv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFinanzas", "ControlFinanzas\ControlFinanzas.csproj", "{84147B55-2B2D-4324-9DBA-11ED2841DFAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionPedidos", "GestionPedidos\GestionPedidos.csproj", "{F82A346E-9F03-4F4C-8065-A8EACC8F6F5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{84147B55-2B2D-4324-9DBA-11ED2841DFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84147B55-2B2D-4324-9DBA-11ED2841DFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84147B55-2B2D-4324-9DBA-11ED2841DFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82A346E-9F03-4F4C-8065-A8EACC8F6F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82A346E-9F03-4F4C-8065-A8EACC8F6F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82A346E-9F03-4F4C-8065-A8EACC8F6F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82A346E-9F03-4F4C-8065-A8EACC8F6F5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
