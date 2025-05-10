@@ -2,11 +2,17 @@ namespace GestionPedidos.Modelos;
 
 public class Pedido
 {
-    public string Id { get; set; }
+    private static int _nextId = 1;
+    public int Id { get; set; }
     public string ClienteId { get; set; }
     public string NombreCliente { get; set; }
     public DateTime Fecha { get; set; }
     public List<ProductoPedido> Productos { get; set; }
+
+    public Pedido()
+    {
+        Id = _nextId++;
+    }
 
     public decimal Total => Productos.Sum(p => p.Subtotal);
 

@@ -2,11 +2,17 @@ namespace GestionPedidos.Modelos;
 
 public class Producto
 {
-    public string Id { get; set; }
+    private static int _nextId = 1;
+    public int Id { get; set; }
     public string Nombre { get; set; }
     public decimal Precio { get; set; }
     public int Stock { get; set; }
-    
+
+    public Producto()
+    {
+        Id = _nextId++;
+    }
+
     public bool HayStockDisponible(int cantidad)
     {
         return Stock >= cantidad;
