@@ -136,9 +136,9 @@ public class UIManager
             }
 
             Console.Write("Seleccione un producto(numero) o 0 para finalizar:");
-            if (!int.TryParse(Console.ReadLine(), out int productoIndex) || productoIndex < 1 || productoIndex > productos.Count)
+            if (!int.TryParse(Console.ReadLine(), out int productoIndex))
             {
-                MostrarMensaje("Selección de producto inválida.");
+                Console.WriteLine("Entrada invalida. ");
                 return;
             }
 

@@ -7,7 +7,7 @@ public class Pedido
     public int ClienteId { get; set; }
     public string NombreCliente { get; set; }
     public DateTime Fecha { get; set; }
-    public List<ProductoPedido> Productos { get; set; }
+    public List<ProductoPedido> Productos { get; set; } = new List<ProductoPedido>();
 
     public Pedido()
     {
